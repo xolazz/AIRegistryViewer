@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/css/styles-sign.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h1 class="nome">Denise AI</h1>
+           <div class="image-container">
+                <img src="/img/io.png" alt="Imagem de Denise AI" class="profile-image">
+            </div>
+            <p class="description">
+                Denise AI é sua assistente virtual, pronta para ajudar com informações, aprendizado de front-end, e muito mais!
+            </p>
+        </div>
+        <div class="right-panel">
+            <div class="sign">
+                <h2>Sign Up for an Account</h2>
+                <form method="post" action="/cadastro">
+                    <div class="input-group">
+                        <input type="text" name="first_name" placeholder="First Name" required>
+                        <input type="text" name="last_name" placeholder="Last Name" required>
+                    </div>
+                    <div class="input-o"> 
+                        <input type="email" name="email" placeholder="Enter your email address" required>
+                        <input type="password" name="senha" placeholder="Enter a strong password" required>
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="terms" required>
+                            <label for="terms">I accept BoardMe's Terms & Conditions</label>
+                    </div>
+                    </div>
+                    <button type="submit" class="btn-primary">Sign Up</button>
+                    <a href="/Templates/login.html">oioioioi</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

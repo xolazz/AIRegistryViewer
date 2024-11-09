@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Upload</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+  <div class="container">
+    <img src="../img/logo.png" alt="Imagem de Exemplo" class="imagem-titulo">
+
+    <h1>Upload de Documentos</h1>
+    <p>Selecione ou arraste seu arquivo</p>
+
+    <div class="button-container">
+      <label for="fileInput" class="upload-button">Selecionar arquivos</label>
+      <input type="file" id="fileInput" onchange="handleFileUpload()" hidden accept="image/*,.pdf">
+
+      <button id="downloadButton" class="download-button" style="display: none;"><a href="download.html">Página de download</a></button>
+    </div>
+
+    <div id="filePreview" class="file-preview"></div>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>
